@@ -1,1 +1,368 @@
+/*
+
+███╗░░░███╗░█████╗░██████╗░███████╗██████╗░███╗░░██╗
+████╗░████║██╔══██╗██╔══██╗██╔════╝██╔══██╗████╗░██║
+██╔████╔██║██║░░██║██║░░██║█████╗░░██████╔╝██╔██╗██║
+██║╚██╔╝██║██║░░██║██║░░██║██╔══╝░░██╔══██╗██║╚████║
+██║░╚═╝░██║╚█████╔╝██████╔╝███████╗██║░░██║██║░╚███║
+╚═╝░░░░░╚═╝░╚════╝░╚═════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝
+
+░█████╗░██████╗░██╗░░░██╗███╗░░██╗░█████╗░██╗░░██╗██╗░░░██╗██████╗░░█████╗░██╗░░░░░██╗░░░░░
+██╔══██╗██╔══██╗██║░░░██║████╗░██║██╔══██╗██║░░██║╚██╗░██╔╝██╔══██╗██╔══██╗██║░░░░░██║░░░░░
+██║░░╚═╝██████╔╝██║░░░██║██╔██╗██║██║░░╚═╝███████║░╚████╔╝░██████╔╝██║░░██║██║░░░░░██║░░░░░
+██║░░██╗██╔══██╗██║░░░██║██║╚████║██║░░██╗██╔══██║░░╚██╔╝░░██╔══██╗██║░░██║██║░░░░░██║░░░░░
+╚█████╔╝██║░░██║╚██████╔╝██║░╚███║╚█████╔╝██║░░██║░░░██║░░░██║░░██║╚█████╔╝███████╗███████╗
+░╚════╝░╚═╝░░╚═╝░╚═════╝░╚═╝░░╚══╝░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚══════╝╚══════╝
+
+█▀█ █▄░█ █▀▀ █░█ █▀▄▀█ ▄▀█ █▀█ █▀▀ █▀▀ █ █▀▀ █ ▄▀█ █░░
+█▀▀ █░▀█ ██▄ █▄█ █░▀░█ █▀█ █▄█ █▀░ █▀░ █ █▄▄ █ █▀█ █▄▄
+
+Version 1.0
+
+𝕋𝕙𝕒𝕟𝕜𝕤 𝕗𝕠𝕣 𝕦𝕤𝕚𝕟𝕘 𝕞𝕪 𝕥𝕙𝕖𝕞𝕖!
+𝕀𝕗 𝕪𝕠𝕦 𝕨𝕒𝕟𝕥 𝕥𝕠 𝕤𝕖𝕖 𝕞𝕠𝕣𝕖 𝕝𝕚𝕜𝕖 𝕥𝕙𝕚𝕤, 𝕣𝕖𝕡𝕠𝕣𝕥 𝕒 𝕓𝕦𝕘, 𝕠𝕣 𝕤𝕦𝕘𝕘𝕖𝕤𝕥 𝕔𝕙𝕒𝕟𝕘𝕖𝕤, 𝕧𝕚𝕤𝕚𝕥 𝕞𝕪 𝕕𝕚𝕤𝕔𝕠𝕣𝕕 𝕤𝕖𝕣𝕧𝕖𝕣:
+
+https://discord.gg/MPWxYmW
+
+*/
+
+/*settings */
+:root 
+{
+    --background-colors: #fff;
+    --secondary-background: #fb5d20;
+    --secondary-background-hover: #ff4700;
+    --secondary-background-hover-2: #ff8b4a;
+    --shadow: #2b2b2b;
+	--shows-banner-display: none; /*change this to <block> if you want to see the ad banner at the top of the shows page*/
+}
+
+/*Universal-----------------------------------------------------------------------------------------*/
+body
+{
+    overflow-x: hidden;
+}
+
+/* top and bottom headers */
+#source_browse, 
+#template_container.template-container, 
+#footer_menu
+{
+    background-color: var(--background-colors);
+}
+
+#header_menubar_beta li
+{
+    background-color: var(--secondary-background-hover-2) !important;
+    border-radius: 8px; 
+    width: 70px !important;
+    text-align: center;
+    box-shadow: inset 0 0 10px var(--secondary-background);
+}
+
+#header_menubar_beta li a 
+{
+    color: white !important;
+}
+
+#header_menubar_beta
+{
+	background-color: var(--secondary-background);
+}
+
+#header_beta
+{
+    background-color: var(--secondary-background);
+}
+
+#header_search_form
+{
+    border-radius: 10px;
+}
+
+#header_search_input
+{
+    border-radius: 10px 0px 0px 10px;
+    background-color: var(--secondary-background-hover);
+    color: white;
+}
+
+#header_search_input::placeholder
+{
+    color: rgba(160,152,149,.75);
+    filter: brightness(1.5);
+}
+
+#header_search_input:focus
+{
+    background-color: var(--secondary-background-hover-2);
+}
+#header_search_input:focus::placeholder
+{
+    color: #cecaca;
+}
+
+/*Shows and Manga-----------------------------------------------------------------------------------------*/
+
+#template_container.template-container
+{
+    width: 97%;
+}
+
+#main_content
+{
+    width: 85%
+}
+
+#sidebar
+{
+    width: 15%;
+}
+
+#tabs
+{
+    background-color: var(--secondary-background);
+    border-radius: 8px;
+}
+
+.portrait-element.block-link.titlefix
+{
+    border-radius: 8px;
+    background-color: var(--shadow);
+    
+}
+
+/*TODO: Will return to this later
+.queue-button.add-queue-button.not-queued.js-add-queue-button
+{
+    width: 1.5rem;
+    position: absolute !important;
+    top: 15px;
+    left: calc(100% - 2.5rem);
+}
+
+.queue-label:before
+{
+    content: "Testing";
+}
+
+*/
+
+.queue-button.add-queue-button.not-queued.js-add-queue-button /*TODO: find a way to prevent this from disrupting the hover effects on shows*/
+{
+      pointer-events: none;
+}
+
+.container-shadow
+{
+    box-shadow: 0 0px 0px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,.2);
+}
+
+.portrait-element.block-link:hover
+{
+    background-color: var(--secondary-background);
+    transition: background-color .1s;
+}
+
+.portrait-element.block-link.titlefix img
+{
+        border-radius: 8px;
+}
+
+.series-title.block.ellipsis
+{
+    color: white;
+}
+
+#sidebar .series-title.block.ellipsis
+{
+    color: #3f3f3f;
+}
+
+.header-userpanel .header-icon svg,
+.caption,
+.open-icon, 
+.close-icon
+{
+    filter: brightness(1.75);
+}
+ 
+#logo_beta
+{
+    filter: drop-shadow(0px 0px 4px var(--shadow)) brightness(1.3);
+}
+
+.main-tabs.cf, .main-tabs
+{
+    
+    background-color: var(--background-colors);
+    padding: 0px;
+}
+
+.main-tabs.cf a.left.selected
+{
+    background-color: var(--secondary-background);
+}
+
+.sub-tabs-menu.cf a
+{
+    color: white;
+}
+
+.main-tabs.cf a
+{
+    color: white;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.main-tabs.cf a.left.selected:hover
+{
+    background-color: var(--secondary-background-hover);
+
+}
+.main-page.responsive.enUS 
+{
+        background-color: var(--background-colors);
+
+}
+
+.cr-expo-banner
+{
+    display: var(--shows-banner-display);
+}
+
+.message-container.cf
+{
+    background-color: var(--secondary-background);
+    opacity: 0.5;
+    border-color: var(--secondary-background-hover);
+}
+
+.message-container.cf a
+{
+    color: white;
+}
+
+.portrait-desc.container-shadow-dark.left
+{
+    border-radius: 8px;
+    padding: 0px 0px;
+    background: var(--secondary-background);
+	background: linear-gradient(180deg, var(--secondary-background) 0%, var(--shadow) 100%);
+}
+
+.portrait-bubble.cf
+{
+     filter: drop-shadow(0px 0px 8px var(--shadow));
+}
+
+.series-title.white.ellipsis
+{
+    border-radius: 8px 8px 0px 0px;
+    background-color: var(--secondary-background);
+}
+
+.white
+{
+    padding: 0px 12px;
+}
+/*episode browser------------------------------------*/
+
+#source_showview 
+.poster{
+    border-radius: 0px 15px 15px 0px;
+	margin-top: 35px;
+}
+#source_showview .season-dropdown.open
+{
+	width: calc(100% - 27px);
+	border-radius: 8px;
+	background: url(/i/beta/videos_dropdown_arrow.png) calc(100% - 20px) 12px no-repeat #e5e5e5;
+}
+
+#source_showview .season-dropdown
+{
+	width: calc(100% - 27px);
+	border-radius: 8px;
+		background: url(/i/beta/videos_dropdown_arrow.png) calc(100% - 20px) -11px no-repeat #e5e5e5;
+
+}
+
+#sidebar_elements
+{
+	width: 298px;
+}
+
+/*Video Player---------------------------------------*/
+
+
+#vilos-player
+{
+	border-radius: 20px;
+	filter: drop-shadow(0px 6px 6px var(--shadow));
+}
+
+
+#showmedia_video_box_wide
+{
+	  margin: auto;
+}
+.collection-carousel-arrow.collection-carousel-rightarrow, .collection-carousel-arrow.collection-carousel-leftarrow
+{
+	background: url(https://github.com/pneumahub/Themes_Plugins/blob/master/Crunchyroll/Modern/Resources/Arrow.png?raw=true) no-repeat -45px 51%;
+	margin: auto 5px auto 5px;
+	margin-top: auto;
+	margin-bottom: auto;
+	height:100%;
+	border-radius: 4px;
+}
+
+.collection-carousel-arrow.collection-carousel-rightarrow:hover, .collection-carousel-arrow.collection-carousel-leftarrow:hover
+{
+	filter: drop-shadow(0px 0px 6px var(--shadow));
+}
+
+.collection-carousel.clearfix
+{
+	background-color: var(--secondary-background);
+	border-radius: 10px;
+	padding: 20px;
+	margin:auto;
+	width: 95%;
+}
+.collection-carousel-media
+{
+	filter: drop-shadow(0px 0px 3px var(--shadow));
+}
+
+.collection-carousel-overlay-top.ellipsis
+{
+	color: white;
+}
+
+.collection-carousel-overlay-bottom.ellipsis.xsmall-margin-bottom
+{
+	color: white;
+}
+
+.collection-carousel-contents
+{
+	margin: auto;
+	width: 97%;
+	border-radius: 5px;
+}
+/*Welcome Page---------------------------------------*/
+#welcome_left
+{
+    width: 75%;
+}
+
+/*News Page------------------------------------------*/
+.topbar-nav-sub
+{
+    background-color: var(--secondary-background) !important;
+}
+
 
