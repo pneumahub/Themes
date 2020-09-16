@@ -8,3 +8,22 @@ I am working on my own extension to use my themes/plugins, but for now you'll ha
 What I am using: <br>
 Javascript: [Custom JavaScript for websites by hromada.dan](https://www.google.com "Visit extension in store") <br>
 CSS: [Stylus by stylus.openstyles](https://add0n.com/stylus.html "Visit official website")
+
+
+# List of content
+
+## Coming soon
+### Themes
+
+### Plugins
+
+## Completed
+### Themes
+
+### Plugins
+
+## Discontinued
+### Themes
+
+### Plugins
+
