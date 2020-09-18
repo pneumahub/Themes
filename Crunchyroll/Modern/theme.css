@@ -31,10 +31,19 @@ https://discord.gg/MPWxYmW
 {
     --background-colors: #fff;
     --secondary-background: #fb5d20;
-    --secondary-background-hover: #ff4700;
-    --secondary-background-hover-2: #ff8b4a;
+    --secondary-background-hover: #d23E04;
+    --secondary-background-hover-2: #ff9c74;
     --shadow: #2b2b2b;
 	--shows-banner-display: none; /*change this to <block> if you want to see the ad banner at the top of the shows page*/
+	
+	/*Border-radius controls. Change these to bevel the corners of elements */
+	--tabs-border-radius: 8px;
+	--shows-items-border-radius: 8px;
+	--navigation-buttons-border-radius: 5px;
+	
+	/*drop-shadow controls*/
+	--shows-list-item-shadow: 2px;
+	--tabs-shadow: 2px;
 }
 
 /*Universal-----------------------------------------------------------------------------------------*/
@@ -54,10 +63,9 @@ body
 #header_menubar_beta li
 {
     background-color: var(--secondary-background-hover-2) !important;
-    border-radius: 8px; 
+    border-radius: var(--navigation-buttons-border-radius); 
     width: 70px !important;
     text-align: center;
-    box-shadow: inset 0 0 10px var(--secondary-background);
 }
 
 #header_menubar_beta li a 
@@ -119,17 +127,11 @@ body
     width: 15%;
 }
 
-#tabs
-{
-    background-color: var(--secondary-background);
-    border-radius: 8px;
-}
-
 .portrait-element.block-link.titlefix
 {
-    border-radius: 8px;
+    border-radius: var(--shows-items-border-radius);
     background-color: var(--shadow);
-    
+    filter: drop-shadow(3px 3px var(--shows-list-item-shadow) var(--shadow));
 }
 
 /*TODO: Will return to this later
@@ -196,8 +198,7 @@ body
 
 .main-tabs.cf, .main-tabs
 {
-    
-    background-color: var(--background-colors);
+    background-color: rgba(0,0,0,0);
     padding: 0px;
 }
 
@@ -226,6 +227,20 @@ body
 {
         background-color: var(--background-colors);
 
+}
+#tabs
+{
+    background-color: rgba(0,0,0,0);
+	filter: drop-shadow(3px 3px var(--shows-list-item-shadow) var(--shadow));
+}
+
+.sub-tabs.cf
+{
+	max-width: 81%;
+	margin: 0px;
+	background-color: var(--secondary-background);
+	border-radius: 0px 8px; 
+	padding: 0px 20px;
 }
 
 .cr-expo-banner
@@ -364,5 +379,4 @@ body
 {
     background-color: var(--secondary-background) !important;
 }
-
 
